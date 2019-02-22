@@ -15,12 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var mergeLabel: UILabel!
     @IBOutlet weak var masterLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
-    
     func updateUI(){
         let git = Git()
         let merge = Merge()
@@ -30,6 +24,12 @@ class ViewController: UIViewController {
         mergeLabel.text = merge.label
         masterLabel.text = master.label
         
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        updateUI()
     }
 
 
