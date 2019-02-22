@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Merge {
+    let label = "Merge"
+}

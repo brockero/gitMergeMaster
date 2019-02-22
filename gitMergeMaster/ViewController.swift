@@ -15,19 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var mergeLabel: UILabel!
     @IBOutlet weak var masterLabel: UILabel!
     
-    struct Git {
-        let label = "Git"
-    }
-    
-    struct Merge {
-        let label = "Merge"
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
+    
     func updateUI(){
         let git = Git()
         let merge = Merge()

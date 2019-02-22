@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Git {
+    let label = "Git"
+}
